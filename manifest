@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: A module to fetch plist data at runtime.
+author: Mitchell Amihod
+license: Use at will.
+copyright: 2012
+
+
+# these should not be edited
+name: plist-module
+moduleid: com.meeech.plist
+guid: 9f589e5f-9866-4242-a057-d610f3bc8699
+platform: iphone
+minsdk: 1.8.2
