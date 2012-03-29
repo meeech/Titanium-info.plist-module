@@ -2,38 +2,27 @@
 
 ## Description
 
-TODO: Enter your module description here
+A module to allow reading of info.plist values at runtime.
 
 ## Accessing the plist-module Module
 
 To access this module from JavaScript, you would do the following:
 
-	var plist-module = require("com.meeech.plist");
-
-The plist-module variable is a reference to the Module object.	
+`
+var plistmodule = require("com.meeech.plist");
+`
 
 ## Reference
 
-TODO: If your module has an API, you should document
-the reference here.
-
-### ___PROJECTNAMEASIDENTIFIER__.function
-
-TODO: This is an example of a module function.
-
-### ___PROJECTNAMEASIDENTIFIER__.property
-
-TODO: This is an example of a module property.
-
-## Usage
-
-TODO: Enter your usage example here
+`
+plistmodule.getValue('keyname');
+`
 
 ## Author
 
-TODO: Enter your author name, email and other contact
-details you want to share here. 
+Mitchell Amihod
+twitter: [meeech](http://www.twitter.com/meeech)
 
 ## License
 
-TODO: Enter your license/legal information here.
+See LICENSE doc.

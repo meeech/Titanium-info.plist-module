@@ -11,6 +11,4 @@
 
 }
 
-@property NSString *exampleProp;
-
 @end
