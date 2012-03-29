@@ -20,5 +20,9 @@ label.text = plistmodule.example();
 
 plistmodule.exampleProp = "This is a test value";
 
-Ti.API.info("module exampleProp is => " + plistmodule.exampleProp);
+label.text = label.text + "\n" +plistmodule.exampleProp;
+label.text = label.text + "\n" +plistmodule.version();
+
+// Ti.API.error("module exampleProp is => " + plistmodule.exampleProp);
+Ti.API.error("module version is => " + plistmodule.version());
 

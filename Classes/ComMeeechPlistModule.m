@@ -94,4 +94,19 @@
 	return @"hello world";
 }
 
+-(id)version:(id)args
+{
+    // Create a new NSBundle pointer
+    NSBundle* mainBundle;
+
+    // The Info.plist is considered the mainBundle.
+    mainBundle = [NSBundle mainBundle]; 
+
+    // Another handy thing I had to search around for a little
+    // Get the value for the "Bundle version" from the Info.plist
+    return @[mainBundle objectForInfoDictionaryKey:@"CFBundleVersion"]
+
+
+}
+
 @end
