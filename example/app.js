@@ -21,8 +21,8 @@ label.text = plistmodule.example();
 plistmodule.exampleProp = "This is a test value";
 
 label.text = label.text + "\n" +plistmodule.exampleProp;
-label.text = label.text + "\n" +plistmodule.version();
+label.text = label.text + "\n" +plistmodule.getValue("CFBundleVersion");
 
 // Ti.API.error("module exampleProp is => " + plistmodule.exampleProp);
-Ti.API.error("module version is => " + plistmodule.version());
+Ti.API.error("module version is => " + plistmodule.getValue("CFBundleVersion"));
 

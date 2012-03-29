@@ -94,8 +94,10 @@
 	return @"hello world";
 }
 
--(id)version:(id)args
+-(id)getValue:(id)args
 {
+    NSString *key = [TiUtils stringValue:[args objectAtIndex:0]];
+
     // Create a new NSBundle pointer
     NSBundle* mainBundle;
 
@@ -104,7 +106,7 @@
 
     // Another handy thing I had to search around for a little
     // Get the value for the "Bundle version" from the Info.plist
-    return [mainBundle objectForInfoDictionaryKey:@"CFBundleVersion"];
+    return [mainBundle objectForInfoDictionaryKey:key];
 
 
 }
