@@ -1,7 +1,9 @@
 Plist Module
 ============
 
-Simple module to access values from app plist at runtime.
+Simple module to access values from app info.plist at runtime.
+
+I wrote this since there was no way to get the value of CFBundleVersion from your app Info.plist in Titanium.
 
 Example Usage:
 
@@ -9,3 +11,6 @@ var plistmodule = require('com.meeech.plist'),
     appVersion = plistmodule.getValue("CFBundleVersion");
 
 Ti.API.info("CFBundleVersion => " + appVersion);
+
+FYI re. Version info: When running in the simulator, you will basically get back the short version. (ie: 2.0) When you build your .ipa and run on device, then you will get the proper bundle version value (ie: 2.0.1333059581).
+

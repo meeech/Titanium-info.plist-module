@@ -2,7 +2,7 @@
 
 ## Description
 
-A module to allow reading of info.plist values at runtime.
+A module to allow reading of info.plist values at runtime. I built it to get access to the full version number for my app, so I could display it in-app.
 
 ## Accessing the plist-module Module
 
@@ -13,9 +13,8 @@ var plistmodule = require("com.meeech.plist");
 `
 
 ## Reference
-
 `
-plistmodule.getValue('keyname');
+plistmodule.getValue('CFBundleVersion');
 `
 
 ## Author
